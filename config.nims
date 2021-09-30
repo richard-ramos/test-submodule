@@ -1,0 +1,1 @@
+switch("d", "MYVARIABLE:HELLO_WORLD")

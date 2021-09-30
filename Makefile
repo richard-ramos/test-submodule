@@ -44,8 +44,12 @@ deps: | deps-common
 
 update: | update-common
 
+
+
+NIMBLE_ENV = RELEASE=$(RELEASE)
+
 build_main: 
-	$(ENV_SCRIPT) nim c src/main.nim
+	$(NIMBLE_ENV)  $(ENV_SCRIPT) nimble build
 
 
 clean: | clean-common
